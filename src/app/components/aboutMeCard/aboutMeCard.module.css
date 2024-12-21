@@ -1,0 +1,26 @@
+.aboutMeCard {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 2rem;
+    gap: 2rem;
+    width: 30em;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    background-color: white;
+    font-family: var(--font-inter);
+}
+
+.aboutMeCardRight {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+
+@media (max-width: 600px) {
+    .aboutMeCard {
+        flex-direction: column;
+        width: unset;
+    }
+}
+
