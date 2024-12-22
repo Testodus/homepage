@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className={styles.h1}>
             Henna <br /> Kotilainen
           </h1>
-          <p>
+          <p className={styles.heroText}>
             A soon to graduate fullstack developer and accessibility enthusiast.
           </p>
         </div>
