@@ -24,3 +24,39 @@
     }
 }
 
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+}
+
+.imageDiv {
+    width: 70%;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+.rightDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 60%;
+}
+
+.h3 {
+    margin: 1em 0 0 0;
+}
+
+.titleP {
+    margin: 0 0 0.2em;
+}
+
+.timespanP {
+    margin: 0 0 1em;
+}
+
+.bodyP {
+    margin: 0;
+}

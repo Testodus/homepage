@@ -28,22 +28,8 @@ export const AboutMeCard = ({
           : `${styles.aboutMeCard} ${styles.aboutMeCardRight}`
       }
     >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          flexBasis: "40%",
-        }}
-      >
-        <div
-          style={{
-            width: "70%",
-            aspectRatio: 1,
-            position: "relative",
-          }}
-        >
+      <div className={styles.leftDiv}>
+        <div className={styles.imageDiv}>
           <Image
             style={{ objectFit: "contain" }}
             src={imagePath}
@@ -51,19 +37,12 @@ export const AboutMeCard = ({
             fill={true}
           />
         </div>
-        <h3 style={{ margin: "1em 0 0 0" }}>{heading}</h3>
+        <h3 className={styles.h3}>{heading}</h3>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          flexBasis: "60%",
-        }}
-      >
-        <p style={{ margin: "0 0 0.2em" }}>{title}</p>
-        <p style={{ margin: "0 0 1em" }}>{timespan}</p>
-        <p style={{ margin: 0 }}>{bodyText}</p>
+      <div className={styles.rightDiv}>
+        <p className={styles.titleP}>{title}</p>
+        <p className={styles.timespanP}>{timespan}</p>
+        <p className={styles.bodyP}>{bodyText}</p>
       </div>
     </article>
   );

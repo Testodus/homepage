@@ -27,6 +27,17 @@
     }
 }
 
+.imageDiv {
+    width: 80%;
+    aspect-ratio: 1.21;
+    position: relative;
+}
+
+.heroTextDiv {
+    display: flex;
+    flex-direction: column;
+}
+
 .h1 {
     font-family: var(--font-inria-serif);
     font-size: 7rem;
@@ -41,6 +52,12 @@
         margin-top: -0.5em;
         margin-right: unset;    
     }
+}
+
+.aboutMeSection {
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
 }
 
 .h2 {

@@ -3,8 +3,6 @@ import styles from "./page.module.css";
 import { AboutMeCard } from "./components/aboutMeCard/aboutMeCard";
 
 // TODO: Add sizes to images. See https://nextjs.org/docs/pages/api-reference/components/image#sizes
-// TODO: Deployment
-// TODO: aboutmesection to own file
 // TODO: hero section paragrahp text size-> larger
 // TODO: about me text size on mobile -> smaller
 // TODO: Kontsa
@@ -12,18 +10,12 @@ import { AboutMeCard } from "./components/aboutMeCard/aboutMeCard";
 // TODO: Favicon
 // TODO: Opengraphimage
 // TODO: readme
-// TODO: Domain
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.heroSection}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
+        <div className={styles.heroTextDiv}>
           <h1 className={styles.h1}>
             Henna <br /> Kotilainen
           </h1>
@@ -31,13 +23,7 @@ export default function Home() {
             A soon to graduate fullstack developer and accessibility enthusiast.
           </p>
         </div>
-        <div
-          style={{
-            width: "80%",
-            aspectRatio: "1.21",
-            position: "relative",
-          }}
-        >
+        <div className={styles.imageDiv}>
           <Image
             style={{ objectFit: "contain" }}
             src={"/henna_kotilainen_extended.jpg"}
@@ -46,9 +32,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section
-        style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
-      >
+      <section className={styles.aboutMeSection}>
         <h2 className={styles.h2}>About me</h2>
         <AboutMeCard
           imagePath={"/teekkari_cap.jpg"}
